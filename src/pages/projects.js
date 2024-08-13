@@ -8,6 +8,7 @@ import { GithubIcon } from '@/components/icons';
 import project1 from '../../public/images/projects/weather.jpg';
 import project2 from "../../public/images/projects/portfolio.jpg"
 import project3 from "../../public/images/projects/dsl.jpg"
+import project4 from "../../public/images/projects/ui.jpg"
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
@@ -95,6 +96,17 @@ const Projects = () => {
                 summary="Created a responsive web application using ReactJS, integrating with the OpenWeather API to fetch and display real-time weather data. The app provides a user-friendly interface with clear visualizations, allowing users to search for weather forecasts by location. The design ensures seamless functionality across different devices and screen sizes​"
                 link='https://weatherwiseproject.netlify.app'
                 github='https://github.com/avneeetk/react-weather-app'
+                type='Project'
+              />
+            </div>
+            <div className='col-span-12'>
+              <FeaturedProject
+                title="Design Portfolio"
+                img={project4}
+                summary="
+                Explore my design portfolio, showcasing a diverse range of projects including UI/UX design, branding, and visual storytelling. Each project highlights my creative process, attention to detail, and ability to deliver user-centered designs that meet both aesthetic and functional needs. Click the link to view case studies, design prototypes, and final deliverables that reflect my passion for design and commitment to excellence.​"
+                link='https://avneetkaur.notion.site/Hi-I-m-Avneet-2d39e18dc8294b078240645cebbec112?pvs=74'
+                github=''
                 type='Project'
               />
             </div>
