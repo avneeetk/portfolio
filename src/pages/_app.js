@@ -4,7 +4,7 @@ import '@/styles/globals.css'
 import {Montserrat} from "next/font/google"
 import Head from 'next/head'
 import Link from 'next/link';
-
+import { ThemeProvider } from "next-themes";
 
 const montserrat = Montserrat({
   subsets:["latin"],
@@ -18,11 +18,18 @@ export default function App({ Component, pageProps }) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
+    <ThemeProvider attribute="class">
+    <main className={`${montserrat.variable} font-mont bg-light dark:bg-gray-900 text-dark dark:text-white w-full min-h-screen`}>
           <NavBar/>
           <Component{...pageProps}/>
           <Footer/>
     </main>
+    </ThemeProvider>
     </>
   )
 }
+
+
+
+    
+ 

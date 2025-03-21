@@ -4,17 +4,22 @@ import Head from 'next/head';
 import AnimatedText from './AnimatedText';
 const Skill = ({ name, x, y }) => {
   return (
-    <motion.div
-      className='flex items-center justify-center rounded-full font-semibold font-mono bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-      whileHover={{ scale: 1.05 }}
-      initial={{ x: 0, y: 0 }}
-      whileInView={{ x: x, y: y }}
-      transition={{ duration: 1.5 }}
-      viewport={{once:true}}
+      <motion.div
+    className="relative w-16 h-16 bg-dark dark:bg-white text-light dark:text-dark 
+              flex items-center justify-center rounded-full text-2xl font-bold 
+              z-10 border border-transparent dark:border-gray-800"
+    whileHover={{ scale: 1.05 }}
+    initial={{ x: 0, y: 0 }}
+    whileInView={{ x: x, y: y }}
+    transition={{ duration: 1.5 }}
+    viewport={{ once: true }}
+    onHoverEnd={(event) => {
+      event.target.style.backgroundColor = ""; // Reset Tailwind's dark mode styling
+    }}
+  >
+    {name}
+  </motion.div>
 
-    >
-      {name}
-    </motion.div>
   );
 };
 
@@ -25,9 +30,9 @@ const Skills = () => {
         <title>Skills</title>
       </Head>
       <AnimatedText text="Skills" className="my-18" />
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold font-mono bg-dark text-light p-8 shadow-dark cursor-pointer"
+          className="flex items-center justify-center rounded-full font-semibold font-mono bg-dark dark:bg-white text-light dark:text-dark p-8 shadow-dark cursor-pointer"
           whileHover={{ scale: 1.05 }}
         >
           Web

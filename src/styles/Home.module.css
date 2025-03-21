@@ -5,6 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: var(--font-mono);
 }
 
 .description {
@@ -23,6 +24,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  font-family: var(--font-mono);
 }
 
 .description p {
@@ -32,6 +34,7 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+  font-family: var(--font-mono);
 }
 
 .code {
@@ -52,16 +55,19 @@
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  font-family: var(--font-mono);
 }
 
 .card span {
   display: inline-block;
   transition: transform 200ms;
+  font-family: var(--font-mono);
 }
 
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
+  font-family: var(--font-mono);
 }
 
 .card p {
@@ -70,6 +76,10 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+  font-family: var(--font-mono);
+}
+.ProjectCard p{
+  font-family: var(--font-mono);
 }
 
 .center {

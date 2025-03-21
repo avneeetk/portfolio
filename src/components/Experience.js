@@ -21,7 +21,7 @@ const Details=({position, company, companyLink, time, address, work})=>{
             <span className='capitalize font-medium text-dark/75 font-mono'>
                 {time} | {address}
             </span>
-            <p>
+            <p className="font-mono">
                 {work}
             </p>
         </motion.div>
@@ -44,10 +44,12 @@ const Experience = () => {
             style={{scaleY: scrollYProgress}}
              className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top  "/>
             <ul className='w-full flex flex-col items-start justify-between mb-32 font-mono'>
+                
+                <Details position="Developer Intern " company="Divine Labs, IIT Delhi" companyLink="https://design.iitd.ac.in/divine-lab.html" time=" Aug 2024 - Oct 2024" address="New Delhi" work="During my internship at IIT Delhi, I contributed to the development of a low-code digital education platform aimed at enhancing accessibility and scalability. I worked on frontend development using JavaScript and React.js, designing intuitive user interfaces and improving user experience. Additionally, I collaborated with educators and designers to integrate FlutterFlow and WordPress, ensuring seamless content delivery. My work focused on building scalable learning modules that aligned with educational needs and student engagement strategies."/>
 
                 <Details position="Software Web Engineer Intern " company="INDInnovations" companyLink="https://www.indinnovation.com" time=" Jun 2024 - Jul 2024" address="New Delhi" work="During my internship at Ind Innovations, I  developed NAF Middleware Platform, a web application designed for user authentication. I worked on both frontend and backend components, using React.js and CSS Modules for a responsive UI, and Node.js with Express.js for server-side logic. I also contributed to database design and management with MySQL to store user credentials and DSL numbers. My work focused on ensuring seamless user access and robust functionality across the platform."/>
 
-                <Details position=" Web Development Intern" company="RDSSDF and Amyloidosis Support Group of India (NGO)" companyLink="https://rdssdf.org" time="Jun 2024-present" address="New Delhi" work="In this role, I've been managing social media and developing the NGO's website, which taught me the significance of digital presence and community engagement. My work on a patient monitoring system for amyloidosis patients provided valuable insights into the healthcare domain and data collection processes, enhancing patient outcomes."/>
+                <Details position=" Web Development Intern" company="RDSSDF and Amyloidosis Support Group of India (NGO)" companyLink="https://rdssdf.org" time="Jun 2024 - Aug 2024" address="New Delhi" work="In this role, I've been managing social media and developing the NGO's website, which taught me the significance of digital presence and community engagement. My work on a patient monitoring system for amyloidosis patients provided valuable insights into the healthcare domain and data collection processes, enhancing patient outcomes."/>
 
                 <Details position=" UI Intern " company="C-DoT, New Delhi" companyLink="https://www.cdot.in/cdotweb/web/home.php" time="Jan 2024 - Feb 2024" address="New Delhi" work="At C-DOT, I applied engineering principles to design user interfaces for a Mobile Device Management (MDM) system. I gained practical experience in UI design, focusing on creating intuitive and user-centric interfaces. "/>
 
