@@ -98,7 +98,7 @@ const Projects = () => {
         <title>Avneet Kaur | Projects Page</title>
         <meta name="description" content="Portfolio of projects by Avneet Kaur" />
       </Head>
-      <main className='w-full mb-16 flex flex-col items-center justify-center pt-16'>
+      <main id="projects" className='w-full mb-16 flex flex-col items-center justify-center pt-16'>
         <Layout className='pt-16'>
           <AnimatedText text="Code.Create.Repeat.🔁" className='mb-8 sm:mb-12 md:mb-16 font-medium text-2xl sm:text-3xl md:text-4xl' />
           

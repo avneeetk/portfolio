@@ -1,16 +1,14 @@
-import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link';
 import { LinkArrow } from '@/components/icons'
+import About from './about';
+import Skills from './skills';
+import Projects from './projects';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Avneet Kaur - Portfolio</title>
-        <meta name="description" content="Portfolio website of Avneet Kaur - Web Developer and UI/UX Designer" />
-      </Head>
-      <main className="flex items-center text-dark w-full min-h-screen scroll pt-0">
+      <main id="home" className="flex items-center text-dark w-full min-h-screen scroll pt-0">
         <div className="flex items-center justify-between w-full -my-10">
           <div className="w-full h-auto flex justify-center items-center">
             <div className="flex flex-col items-start text-left">
@@ -34,6 +32,9 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <About/>
+      <Skills/>
+      <Projects/>
     </>
   )
 }

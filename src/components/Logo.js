@@ -20,7 +20,7 @@ const Logo = () => {
       {/* Centered Logo */}
       <MotionLink
   href="mailto:avneet15khanna@gmail.com"
-  className="relative w-16 h-16 bg-dark dark:bg-light text-light dark:text-dark flex items-center justify-center rounded-full text-2xl font-bold z-10 border border-transparent dark:border-gray-800"
+  className="relative w-16 h-16 bg-dark dark:bg-light text-light dark:text-dark flex items-center justify-center rounded-full text-2xl font-bold z-10 border border-transparent dark:border-gray-800 "
   whileHover={{
     backgroundColor: [
       '#121212', // Dark default

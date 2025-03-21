@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { GithubIcon, LinkedInIcon, GmailIcon, SunIcon, MoonIcon } from './icons';
 import Logo from './Logo';
 import { motion } from "framer-motion";
@@ -8,8 +8,22 @@ import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
+  
+  const handleClick = (e) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      const offset = element.offsetTop - 100;
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative group`} onClick={handleClick}>
       {title}
       <span className={`
         h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
@@ -23,14 +37,32 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
+  const [isLogoVisible, setIsLogoVisible] = useState(true);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      // Hide the logo when scrolling down (scrollY > 50px, adjust as needed)
+      if (window.scrollY > 50) {
+        setIsLogoVisible(false);
+      } else {
+        setIsLogoVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-10 font-medium flex items-center justify-between fixed top-0 z-50 bg-light/80 dark:bg-dark/80 backdrop-blur-sm">
       <nav>
-        <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="/about" title="About" className="mx-4" />
-        <CustomLink href="/skills" title="Skills" className="ml-4" />
-        <CustomLink href="/projects" title="Projects" className="mx-4" />
+        <CustomLink href="#home" title="Home" className="mr-4" />
+        <CustomLink href="#about" title="About" className="mx-4" />
+        <CustomLink href="#skills" title="Skills" className="ml-4" />
+        <CustomLink href="#projects" title="Projects" className="mx-4" />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
@@ -64,7 +96,11 @@ const NavBar = () => {
         </button>
       </nav>
 
-      <div className="absolute left-[50%] top-3 translate-x-[-50%] ml-3">
+      <div
+        className={`absolute left-[50%] top-3 translate-x-[-50%] ml-3 transition-opacity duration-300 ${
+          isLogoVisible ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
         <Logo />
       </div>
     </header>

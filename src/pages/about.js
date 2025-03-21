@@ -14,9 +14,9 @@ const About = () => {
         <title>Avneet Kaur | About Page</title>
         <meta name="description" content="any description"></meta>
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
-        <Layout className="mt-16">
-          <AnimatedText text="About Me" className="my-12" />
+      <main id="about" className="flex w-full flex-col items-center justify-center">
+        <Layout className="mt-12">
+          <AnimatedText text="About Me" className="mb-8 sm:mb-12 md:mb-16 font-medium text-2xl sm:text-3xl md:text-4xl" />
           <div className="grid w-full grid-cols-8 gap-8">
             <div className="col-span-5 flex flex-col items-start justify-center pr-3">
               {/* <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">About Me</h2> */}

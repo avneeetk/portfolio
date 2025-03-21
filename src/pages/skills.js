@@ -75,7 +75,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-light dark:bg-dark py-16 px-4">
+    <div id="skills" className="min-h-screen bg-light dark:bg-dark py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.h1 
           className="text-4xl font-bold text-center mb-12 text-dark dark:text-light"

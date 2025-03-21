@@ -37,7 +37,7 @@ const Experience = () => {
     })
   return (
     <div className="my=64">
-          <AnimatedText text="Experience" className="mt-48 mb-12" />
+          <AnimatedText text="Experience" className="mt-48 mb-12 mb-8 sm:mb-12 md:mb-16 font-medium text-2xl sm:text-3xl md:text-4xl" />
 
         <div ref={ref} className='w-[75%] mx-auto relative'>
             <motion.div
