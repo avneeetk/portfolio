@@ -43,7 +43,7 @@ const Experience = () => {
             className='mb-6 sm:mb-8 md:mb-12 lg:mb-16 font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl'
           />
 
-        <div ref={ref} className='w-[75%] mx-auto relative'>
+        <div ref={ref} className='w-[95%] mx-auto relative'>
             <motion.div
             style={{scaleY: scrollYProgress}}
              className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top  "/>
