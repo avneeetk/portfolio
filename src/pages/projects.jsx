@@ -98,9 +98,12 @@ const Projects = () => {
         <title>Avneet Kaur | Projects Page</title>
         <meta name="description" content="Portfolio of projects by Avneet Kaur" />
       </Head>
-      <main id="projects" className='w-full mb-16 flex flex-col items-center justify-center pt-16'>
-        <Layout className='pt-16'>
-          <AnimatedText text="Code.Create.Repeat.🔁" className='mb-8 sm:mb-12 md:mb-16 font-medium text-2xl sm:text-3xl md:text-4xl' />
+      <main id="projects" className='w-full mb-16 flex flex-col items-center justify-center pt-8 sm:pt-12 md:pt-16'>
+        <Layout className='pt-8 sm:pt-12 md:pt-16 w-full'>
+          <AnimatedText 
+            text="Code.Create.Repeat.🔁" 
+            className='mb-6 sm:mb-8 md:mb-12 lg:mb-16 font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl' 
+          />
           
           <div className="relative w-full overflow-hidden">
             <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-light dark:from-dark to-transparent z-10" />
