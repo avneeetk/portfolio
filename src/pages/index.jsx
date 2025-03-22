@@ -14,7 +14,7 @@ export default function Home() {
             <div className="flex flex-col items-start text-left">
               <AnimatedText text="Hello, World! 👩🏻‍💻" className='!text-6xl text-left mt-20'/>
               <p className='mt-10 text-xl font-mono max-w-prose text-dark dark:text-white'>
-                I'm Avneet Kaur, a Web Developer, a UI/UX designer, and an upcoming Software Engineer.
+                I&aptos;m Avneet Kaur, a Web Developer, a UI/UX designer, and an upcoming Software Engineer.
               </p>
               <p className='my-4 text-base font-mono max-w-prose text-dark dark:text-white'>
                 Welcome to my corner of the internet! As a passionate tech enthusiast, I believe in the power of innovation and collaboration. Join me on this journey as we create meaningful digital experiences and grow together in the ever-evolving world of technology.

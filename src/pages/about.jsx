@@ -21,14 +21,14 @@ const About = () => {
             <div className="col-span-5 flex flex-col items-start justify-center pr-3">
               {/* <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">About Me</h2> */}
               <p className="font-normal font-mono">
-              Hi, I'm Avneet Kaur, a dedicated tech student majoring in Computer Science. I have a passion for web development and UI/UX design, with a love for crafting beautiful, functional, and user-friendly digital experiences. While I'm still on my academic journey, I continuously seek new challenges and opportunities to expand my skill set. I believe that design is not just about aesthetics; it's about solving real-world problems and creating seamless user experiences.
+              Hi, I&apos;m Avneet Kaur, a dedicated tech student majoring in Computer Science. I have a passion for web development and UI/UX design, with a love for crafting beautiful, functional, and user-friendly digital experiences. While I&apos;m still on my academic journey, I continuously seek new challenges and opportunities to expand my skill set. I believe that design is not just about aesthetics; it&apos;s about solving real-world problems and creating seamless user experiences.
               </p>
               <p className="font-normal font-mono my-4 ">
-                I believe that design is about more than just making things look pretty – it's about solving problems and
+                I believe that design is about more than just making things look pretty – it&apos;s about solving problems and
                 creating intuitive, enjoyable experiences for users.
               </p>
               <p className="font-normal font-mono">
-              My curiosity drives me to learn constantly, and I'm always eager to explore the latest in technology and design. Let's collaborate to bring your vision to life and make a positive impact together!"
+              My curiosity drives me to learn constantly, and I&apos;m always eager to explore the latest in technology and design. Let&apos;s collaborate to bring your vision to life and make a positive impact together!
               </p>
             </div>
             <div className="col-span-3 flex items-center justify-end ">
