@@ -46,7 +46,7 @@ const Experience = () => {
                 <motion.div
                 style={{scaleY: scrollYProgress}}
                 className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top  "/>
-                <ul className='w-full flex flex-col items-start justify-between mb-32 font-mono'>
+                <ul className='w-auto flex flex-col items-start justify-between mb-32 font-mono'>
                 
                 <Details position="Developer Intern " company="Divine Labs, IIT Delhi" companyLink="https://design.iitd.ac.in/divine-lab.html" time=" Aug 2024 - Oct 2024" address="New Delhi" work="During my internship at IIT Delhi, I contributed to the development of a low-code digital education platform aimed at enhancing accessibility and scalability. I worked on frontend development using JavaScript and React.js, designing intuitive user interfaces and improving user experience. Additionally, I collaborated with educators and designers to integrate FlutterFlow and WordPress, ensuring seamless content delivery. My work focused on building scalable learning modules that aligned with educational needs and student engagement strategies."/>
 

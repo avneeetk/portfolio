@@ -20,8 +20,8 @@ const About = () => {
             className='mb-6 sm:mb-8 md:mb-12 lg:mb-16 font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl'
           />
           <div className="grid w-full grid-cols-1 md:grid-cols-8 gap-4 sm:gap-6 md:gap-8">
-            <div className="col-span-1 md:col-span-5 flex flex-col items-start justify-start">
-              <p className="font-normal font-mono text-sm sm:text-base">
+            <div className="col-span-1 md:col-span-5 flex flex-col items-start justify-start  px-4 sm:px-8 md:px-16 pt-4 sm:pt-8">
+              <p className="font-normal font-mono text-sm sm:text-base my-4 te max-w-prose text-dark dark:text-white">
                 Hi, I&apos;m Avneet Kaur, a dedicated tech student majoring in Computer Science. I have a passion for web development and UI/UX design, with a love for crafting beautiful, functional, and user-friendly digital experiences. While I&apos;m still on my academic journey, I continuously seek new challenges and opportunities to expand my skill set. I believe that design is not just about aesthetics; it&apos;s about solving real-world problems and creating seamless user experiences.
               </p>
               <p className="font-normal font-mono my-4 text-sm sm:text-base">
