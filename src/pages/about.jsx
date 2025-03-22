@@ -32,18 +32,19 @@ const About = () => {
                 My curiosity drives me to learn constantly, and I&apos;m always eager to explore the latest in technology and design. Let&apos;s collaborate to bring your vision to life and make a positive impact together!
               </p>
             </div>
-            <div className="col-span-1 md:col-span-3 flex items-center justify-center md:justify-end mt-8 md:mt-0">
-              <div className="relative h-fit rounded-2xl border-2 border-dashed border-dark bg-light">
-                <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-500" />
-                <Image 
-                  src={profilePic} 
-                  alt="avneetkaur" 
-                  className="w-full h-auto rounded-2xl"
-                  width={150}
-                  height={150}
-                  priority
-                />
-              </div>
+            <div className="col-span-1 md:col-span-3 flex items-center justify-center mt-8 md:mt-0">
+  <div className="relative h-fit rounded-2xl border-2 border-dashed border-dark bg-light">
+    <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-500" />
+    <Image 
+      src={profilePic} 
+      alt="avneetkaur" 
+      className="w-[150px] sm:w-[150px] md:w-[200px] lg:w-[250px] h-auto rounded-2xl"
+      width={150}
+      height={150}
+      priority
+    />
+  </div>
+
             </div>
           </div>
           <Education/>
